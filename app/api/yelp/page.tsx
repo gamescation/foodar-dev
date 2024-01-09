@@ -7,7 +7,7 @@ const client = yelp.client(process.env.YELP_API_KEY);
 
 export default function GET() {  
   client.search({
-    term: 'Four Barrel Coffee',
+    term: 'coffee',
     location: 'san francisco, ca',
   }).then((response: any) => {
     console.log(response.jsonBody.businesses[0].name);
