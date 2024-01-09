@@ -56,6 +56,9 @@ dependencies:
   typescript:
     specifier: 5.2.2
     version: 5.2.2
+  yelp-fusion:
+    specifier: ^3.0.0
+    version: 3.0.0
 
 packages:
 
@@ -320,6 +323,15 @@ packages:
     resolution: {integrity: sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==}
     dependencies:
       tslib: 2.6.2
+    dev: false
+
+  /@tonybadguy/call-me-maybe@2.1.1:
+    resolution: {integrity: sha512-Gc7G5o5Wd5I0d3ohzoZmqb1Jowr8sGURcFmGsoqiPk2ydFjwtYXRQTb4eYoJ1dZqdBlQGHRmL5mmbiMm4Kl2/w==}
+    dependencies:
+      caseless: 0.11.0
+      error: 7.2.1
+      small-request: 2.1.0
+      string-template: 1.0.0
     dev: false
 
   /@tsconfig/node10@1.0.9:
@@ -686,6 +698,10 @@ packages:
     resolution: {integrity: sha512-zvtSJwuQFpewSyRrI3AsftF6rM0X80mZkChIt1spBGEvRglCrjTniXvinc8JKRoqTwXAgvqTImaN9igfSMtUBw==}
     dev: false
 
+  /caseless@0.11.0:
+    resolution: {integrity: sha512-ODLXH644w9C2fMPAm7bMDQ3GRvipZWZfKc+8As6hIadRIelE0n0xZuN38NS6kiK3KPEVrpymmQD8bvncAHWQkQ==}
+    dev: false
+
   /chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
@@ -858,6 +874,12 @@ packages:
     dependencies:
       graceful-fs: 4.2.11
       tapable: 2.2.1
+    dev: false
+
+  /error@7.2.1:
+    resolution: {integrity: sha512-fo9HBvWnx3NGUKMvMwB/CBCMMrfEJgbDTVDEkPygA3Bdd3lM1OyCd+rbQ8BwnpF6GdVeOLDNmyL4N5Bg80ZvdA==}
+    dependencies:
+      string-template: 0.2.1
     dev: false
 
   /es-abstract@1.22.2:
@@ -2228,6 +2250,12 @@ packages:
       set-function-name: 2.0.1
     dev: false
 
+  /request-function@2.0.0:
+    resolution: {integrity: sha512-tw6kEYJp+JPLEjcEBFEtAvtDFUHY50LtrSAJHKXaos2+geAXSKjKNdA2wwTsqDq8YKl1i3+TJ60AjUb5exaM8A==}
+    dependencies:
+      error: 7.2.1
+    dev: false
+
   /resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
@@ -2344,6 +2372,12 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
+  /small-request@2.1.0:
+    resolution: {integrity: sha512-tQlteNci7wsIsmt7KoyZj0izeuY718NBeKVhJdWxTmQHKsJp4INUhWLTJ000EzNu9p41TqbGPOrSl0wroK581Q==}
+    dependencies:
+      request-function: 2.0.0
+    dev: false
+
   /source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
@@ -2352,6 +2386,14 @@ packages:
   /streamsearch@1.1.0:
     resolution: {integrity: sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==}
     engines: {node: '>=10.0.0'}
+    dev: false
+
+  /string-template@0.2.1:
+    resolution: {integrity: sha512-Yptehjogou2xm4UJbxJ4CxgZx12HBfeystp0y3x7s4Dj32ltVVG1Gg8YhKjHZkHicuKpZX/ffilA8505VbUbpw==}
+    dev: false
+
+  /string-template@1.0.0:
+    resolution: {integrity: sha512-SLqR3GBUXuoPP5MmYtD7ompvXiG87QjT6lzOszyXjTM86Uu7At7vNnt2xgyTLq5o9T4IxTYFyGxcULqpsmsfdg==}
     dev: false
 
   /string.prototype.matchall@4.0.10:
@@ -2735,6 +2777,12 @@ packages:
   /yaml@2.3.2:
     resolution: {integrity: sha512-N/lyzTPaJasoDmfV7YTrYCI0G/3ivm/9wdG0aHuheKowWQwGTsK0Eoiw6utmzAnI6pkJa0DUVygvp3spqqEKXg==}
     engines: {node: '>= 14'}
+    dev: false
+
+  /yelp-fusion@3.0.0:
+    resolution: {integrity: sha512-Os4A0+v980W8sm4kurUpK4E0FMS5hvtA0//g7Jb9QI2gS7WfX/1Zw12S792LKt3YM/qJNow7XIR2g3bONlX/fg==}
+    dependencies:
+      '@tonybadguy/call-me-maybe': 2.1.1
     dev: false
 
   /yn@3.1.1:
